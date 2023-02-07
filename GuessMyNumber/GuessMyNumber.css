@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 70%;
+}
+body {
+  font-family: "Press Start 2P";
+  background-color: rgb(19, 18, 18);
+  color: rgb(231, 221, 208);
+}
+.btncolor {
+  font-family: "Press Start 2P";
+  color: rgb(19, 18, 18);
+  padding: 10px;
+}
+header {
+  height: 35vh;
+  position: relative;
+  border-bottom: 7px solid rgb(231, 221, 208);
+}
+main {
+  height: 65vh;
+  color: rgb(231, 221, 208);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.giveNumber {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guessNumber {
+  width: 52rem;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  width: 100%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#quesMark {
+  background-color: rgb(231, 221, 208);
+  color: rgb(19, 18, 18);
+  font-size: 6rem;
+  width: 15rem;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  left: 45%;
+  transform: translate(-50%, 50%);
+  padding: 3rem 0rem;
+}
+#between {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.guess {
+  background: none;
+  border: 4px solid rgb(231, 221, 208);
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  padding: 2.5rem;
+  width: 25rem;
+  text-align: center;
+  display: block;
+  margin-bottom: 3rem;
+}
+.btncolor {
+  border: none;
+  background-color: rgb(231, 221, 208);
+  color: rgb(19, 18, 18);
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+.btncolor:hover {
+  background-color: rgb(233, 216, 193);
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
