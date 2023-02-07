@@ -1,21 +1,21 @@
-GUESS MY NUMBER
+# *GUESS MY NUMBER*
 
-A website where user can play guessing a random number. 
+### A website where user can play by guessing a random number. 
 
-Features
+## **Features**
 
-User’s Perspective:
+### **Userâ€™s Perspective:**
 * Can be able to give a random number between 1 to 20. 
 * Calculates the current score and High score.
-* Playing the new game in current user’s session. 
+* Playing the new game in current userâ€™s session. 
 
 
-Used Tools:
+### **Used Tools:**
 * HTML5
 * CSS3
 * Javascript
 
-Project Setup:
+### **Project Setup:**
 
 * Clone and open in Visual Studio Code
 * Browse http://localhost:8080/ or Open Live server extension. 
