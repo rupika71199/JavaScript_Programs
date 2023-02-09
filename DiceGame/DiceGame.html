@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dice Game</title>
+    <meta name="charset" />
+    <meta name="author" content="Rupika" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="icon" href="Dice.jpg" />
+    <link rel="stylesheet" href="DiceGame.css" />
+  </head>
+  <body>
+    <main>
+      <div class="player player0 playeractive">
+        <h1 class="name" id="name0">PLAYER 1</h1>
+        <p class="score" id="score0">40</p>
+        <div class="current">
+          <h4 class="currentLabel">CURRENT</h4>
+          <p class="currentScore" id="current0">0</p> 
+        </div>
+      </div>
+      <div class="player player1">
+        <h1 class="name" id="name1">PLAYER 2</h1>
+        <p class="score" id="score1">30</p>
+        <div class="current">
+          <h4 class="currentLabel">CURRENT</h4>
+          <p class="currentScore" id="current1">0</p>
+        </div>
+      </div>
+      <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
+      <button class="ctabtn new">🔄 New Game</button>
+      <button class="ctabtn end">❌ End Game</button>
+      <button class="ctabtn role">🎲 Role Dice</button>
+      <button class="ctabtn hold">🕹 Hold</button>
+    </main>
+    <div class="endModal hidden">
+      <button class="close">&times;</button>
+      <p>Are you Sure you want to End this Game💔</p>
+      <button class="btn yes">Yes 😕</button>
+      <button class="btn no">No 😀</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="DiceGame.js"></script>
+    <script src="confetti.js"></script>
+  </body>
+</html>
