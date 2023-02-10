@@ -103,33 +103,43 @@ hold.addEventListener("click",function(){
 
 //Ending the game 
 endGame.addEventListener("click",function(){
-    modal.classList.remove("hidden");
-    document.querySelector(".overlay").classList.remove("hidden");
-    //Adding hidden tag 
-    const addHidden = function(){
-        modal.classList.add("hidden");
-        document.querySelector(".overlay").classList.add("hidden");
-    }
-    //Close the modal
-    document.querySelector(".close").addEventListener("click",addHidden);
-    document.addEventListener("keydown",function(e){
-        console.log(e.key);
-        if (e.key==='Escape'){
+    if (state){
+        modal.classList.remove("hidden");
+        document.querySelector(".overlay").classList.remove("hidden");
+        //Adding hidden tag 
+        const addHidden = function(){
+            modal.classList.add("hidden");
+            document.querySelector(".overlay").classList.add("hidden");
+        }
+        //Close the modal
+        document.querySelector(".close").addEventListener("click",addHidden);
+        document.addEventListener("keydown",function(e){
+            console.log(e.key);
+            if (e.key==='Escape'){
+                addHidden();
+            }
+        });
+        //If no clicked
+        noModal.addEventListener("click",addHidden);
+        //if yes clicked
+        yesModal.addEventListener("click",function(){
             addHidden();
-        }
-    });
-    //If no clicked
-    noModal.addEventListener("click",addHidden);
-    //if yes clicked
-    yesModal.addEventListener("click",function(){
-        addHidden();
-        if(scores[0]>scores[1]){
-            activePlayer=0;
-            winnerAttribute();
-        }
-        else{
-            activePlayer=1;
-            winnerAttribute();
-        }
-    });
+            if (scores[0]===0 && scores[1]===0){
+                addHidden();
+            }
+            else{
+                if(scores[0]>scores[1]){
+                    activePlayer=0;
+                    winnerAttribute();
+                }
+                else{
+                    activePlayer=1;
+                    winnerAttribute();
+                }
+            }
+            
+        });
+
+    }
+    
 });
