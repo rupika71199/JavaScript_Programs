@@ -27,6 +27,10 @@ User can
 ![DiceGameFlowchart](https://user-images.githubusercontent.com/54763077/217890909-1f204adb-ca89-4563-84d4-1941c62f4c9e.png)
 
 
+## Video 
+
+https://user-images.githubusercontent.com/54763077/217977807-91737b65-0da8-4781-9fb5-ed9540095a41.mp4
+
 ## Project Setup
 * Clone and open in Visual Studio Code
 * Browse http://127.0.0.1:5500/DiceGame/DiceGame.html or Open Live server extension in VS code
