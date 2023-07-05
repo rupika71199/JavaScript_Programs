@@ -37,4 +37,5 @@ https://user-images.githubusercontent.com/54763077/217977807-91737b65-0da8-4781-
 
 ## Note
 * I made this website as a part of this course: https://www.udemy.com/course/the-complete-javascript-course/ 
-* Additional functionality - End game added by me and it was not in the course. 
+* Additional functionality - End game added by me and it was not in the course.
+* Hosted this website using FireBase - https://game-rupika.web.app/
